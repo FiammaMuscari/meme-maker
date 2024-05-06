@@ -10,7 +10,7 @@ import IosShareRoundedIcon from "@mui/icons-material/IosShareRounded";
 export const tools = [
   {
     id: 0,
-    title: "Photos",
+    title: "Pepes",
     icon: <PhotoIcon />,
     component: "imagesSection",
   },

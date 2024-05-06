@@ -7,8 +7,8 @@ import CanvasBackground from "./CanvasBackground";
 
 function Canvas() {
   // static canvas dimensions used for scaling ratio
-  const stageWidth = 900,
-    stageHeight = 600;
+  const stageWidth = 450,
+    stageHeight = 300;
   // dynamic canvas dimensions
   const [stageDimensions, setStageDimensions] = useState({
     width: stageWidth,
@@ -117,7 +117,6 @@ function Canvas() {
   };
 
   // function to handle adding background image of canvas
-  // function to handle adding background image of canvas
   const addToBackground = (backgroundUrl) => {
     setBackgroundImage(backgroundUrl);
 
@@ -126,15 +125,15 @@ function Canvas() {
     tempImage.src = backgroundUrl;
     tempImage.onload = () => {
       // Calculate the scale factor to fit the canvas to the background image
-      const scaleFactor = Math.max(
-        tempImage.width / stageWidth,
-        tempImage.height / stageHeight
+      const scaleFactor = Math.min(
+        stageWidth / 2,
+        stageHeight / tempImage.height
       );
 
       // Set the new dimensions of the stage
       setStageDimensions({
-        width: tempImage.width / scaleFactor,
-        height: tempImage.height / scaleFactor,
+        width: tempImage.width * scaleFactor,
+        height: tempImage.height * scaleFactor,
         scale: 1,
       });
     };
