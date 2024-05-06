@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Kakashi",
+    "elementCategory": "photos",
+    "photoCategory": "anime",
+    "source": "images/1.png"
+  },
+  {
+    "name": "Anime cat",
+    "elementCategory": "photos",
+    "photoCategory": "anime",
+    "source": "images/2.png"
+  },
+  {
+    "name": "Cat",
+    "elementCategory": "photos",
+    "photoCategory": "animals",
+    "source": "images/3.png"
+  },
+  {
+    "name": "Background",
+    "elementCategory": "backgrounds",
+    "source": "images/background1.jpg"
+  },
+  {
+    "name": "Background2",
+    "elementCategory": "backgrounds",
+    "source": "images/background2.jpg"
+  },
+  {
+    "name": "Background3",
+    "elementCategory": "backgrounds",
+    "source": "images/background3.jpg"
+  }
+]
